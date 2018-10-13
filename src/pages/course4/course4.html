@@ -1,0 +1,50 @@
+<!--
+  Generated template for the PromotionPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+</ion-header>
+
+<ion-content padding class="course4-bg">
+  <br>
+  <img src="../../assets/imgs/frame/4_head.png" />
+  <div *ngFor="let course4 of course4s; last as isLast">
+    <h1 style="text-align: center;">
+      <img width="15" height="15" src="../../assets/imgs/leaf.png" *ngIf="course4.vet == 1" />
+      <img width="15" height="15" src="../../assets/imgs/gluten.png" *ngIf="course4.glutin == 1" />
+      <img width="15" height="15" src="../../assets/imgs/peanut.png" *ngIf="course4.nut == 1" /> {{course4.$key}}
+    </h1>
+    <p style=" text-align: center;">
+      <i>{{course4.desc}}</i>
+    </p>
+    <p style=" text-align: center; font-family: 'agency';">{{course4.wine}}</p>
+    <img width="300px" height="50px" style="margin-left: 190px; margin-bottom: 20px;" src="../../assets/imgs/line.png" *ngIf="!isLast"
+    />
+  </div>
+  <h1 style="text-align: center;">OR</h1>
+  <br>
+  <div *ngFor="let course4_or of course4_ors; last as isLast">
+    <h1 style="text-align: center;">
+      <img width="15" height="15" src="../../assets/imgs/leaf.png" *ngIf="course4_or.vet == 1" />
+      <img width="15" height="15" src="../../assets/imgs/gluten.png" *ngIf="course4_or.glutin == 1" />
+      <img width="15" height="15" src="../../assets/imgs/peanut.png" *ngIf="course4_or.nut == 1" /> {{course4_or.$key}}
+    </h1>
+    <p style=" text-align: center;">
+      <i>{{course4_or.desc}}</i>
+    </p>
+    <p style=" text-align: center; font-family: 'agency';">{{course4_or.wine}}</p>
+    <img width="300px" height="50px" style="margin-left: 190px; margin-bottom: 20px;" src="../../assets/imgs/line.png" *ngIf="!isLast"
+    />
+    <br>
+  </div>
+  <h1 style="text-align: center;">4-course set</h1>
+  <br>
+  <h1 style="text-align: center;">4,500 or 5,850 with wines</h1>
+
+  <img style="max-width: 70%; border: 0;margin-left: 15%;" src="../../assets/imgs/frame/bottom.png" />
+  
+
+</ion-content>

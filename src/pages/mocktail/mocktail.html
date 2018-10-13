@@ -1,0 +1,116 @@
+<!--
+  Generated template for the PromotionPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  </ion-header>
+  
+  <ion-content class="mocktail-bg">
+        <br>
+        
+          <ion-grid>
+          
+            <ion-row>
+                <ion-col col-6 >
+                <h1 style="font-size: 3.5rem; color: #ffdb72; ">MOCKTAILS</h1>
+                </ion-col>
+                <ion-col col-6 >
+                <h1 style="font-size: 3.5rem; color: #ffdb72; "> 450</h1>
+                </ion-col>
+            </ion-row>
+            <ion-row style="margin-top: -20px;" *ngFor="let mocktail of mocktails">
+                  <ion-col col-4 >
+                  <h1>{{mocktail.$key}}</h1>
+                  </ion-col>
+                  <ion-col col-8 >
+                  <p>{{mocktail.desc}}</p>
+                  </ion-col>
+            </ion-row>
+              <ion-row>
+                  <ion-col col-12 >
+                  <h1 style="font-size: 3.5rem; color: #ffdb72; ">SOFT DRINKS</h1>
+                  </ion-col>
+            </ion-row>
+            <ion-row style="margin-top: -20px;" *ngFor="let softDrink of softDrinks">
+                  <ion-col col-9 >
+                  <h1 >{{softDrink.$key}}</h1>
+                  </ion-col>
+                  <ion-col col-1 >
+                  </ion-col>
+                  <ion-col col-2 >
+                  <h1 > {{softDrink.price}}</h1>
+                  </ion-col>
+              </ion-row>
+           
+                <ion-row>
+                  <ion-col col-12 >
+                  <h1 style="font-size: 3.5rem; color: #ffdb72; ">STILL WATER</h1>
+                  </ion-col>
+                </ion-row>
+                <ion-row style="margin-top: -20px;" *ngFor="let stillWater of stillWaters">
+                  <ion-col col-4 >
+                  <h1 >{{stillWater.$key}}</h1>
+                  </ion-col>
+                  <ion-col col-2 >
+                  <h1 >{{stillWater.price}}</h1>
+                  </ion-col>
+                </ion-row>
+                <br>
+                <ion-row>
+                  <ion-col col-12 >
+                  <h1 style="font-size: 3.5rem; color: #ffdb72; ">SPARKLING WATER</h1>
+                  </ion-col>
+                </ion-row>
+                <ion-row style="margin-top: -20px;" *ngFor="let sparklingWater of sparklingWaters">
+                  <ion-col col-4 >
+                  <h1 >{{sparklingWater.$key}}</h1>
+                  </ion-col>
+                  <ion-col col-2 >
+                  <h1 >{{sparklingWater.price}}</h1>
+                  </ion-col>
+                </ion-row>
+                <br>
+                <ion-row>
+                  <ion-col col-12 >
+                  <h1 style="font-size: 3.5rem; color: #ffdb72; ">JUICE</h1>
+                  </ion-col>
+                </ion-row>
+                <ion-row style="margin-top: -20px;" *ngFor="let juice of juices">
+                    <ion-col col-9 >
+                    <h1 >{{juice.$key}}</h1>
+                    </ion-col>
+                    <ion-col col-1 >
+                    </ion-col>
+                    <ion-col col-2 >
+                    <h1 > {{juice.price}}</h1>
+                    </ion-col>
+                </ion-row>
+                <br>
+                <ion-row>
+                  <ion-col col-12 >
+                  <h1 style="font-size: 3.5rem; color: #ffdb72; ">HOT</h1>
+                  </ion-col>
+                </ion-row>
+                <ion-row style="margin-top: -20px;" *ngFor="let hot of hots">
+                    <ion-col col-9 >
+                    <h1 >{{hot.$key}}</h1>
+                    </ion-col>
+                    <ion-col col-1 >
+                    </ion-col>
+                    <ion-col col-2 >
+                    <h1 > {{hot.price}}</h1>
+                    </ion-col>
+                </ion-row>
+               
+          </ion-grid>
+  </ion-content>
+  <ion-footer >
+        <ion-toolbar class="footer-custom">
+            <ion-title>Prices are in Thai Baht subject to 10% service charge and applicable tax.</ion-title>
+        </ion-toolbar>
+    </ion-footer>
+  
+  

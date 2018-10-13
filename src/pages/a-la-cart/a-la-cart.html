@@ -1,0 +1,326 @@
+<!--
+  Generated template for the PromotionPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+</ion-header>
+
+<ion-content padding class="aLaCart-bg">
+    <br>
+    <h1 text-center style="font-size: 5rem; color: black; ">Vertigo A la Carte Menu</h1>
+    <ion-card class="">
+        <ion-grid>
+            <ion-row>
+                <ion-col col-12>
+                    <h1 text-right style="font-size: 3rem; ">APPETIZERS</h1>
+                    <br>
+                </ion-col>
+            </ion-row>
+            <ion-row *ngFor="let APPETIZER of APPETIZERS">
+                <ion-col col-10>
+                    <h1 style="font-size: 2.5rem;  font-family: 'century';">
+                        <img width="15" height="15" src="../../assets/imgs/leaf.png" *ngIf="APPETIZER.vet == 1" />
+                        <img width="15" height="15" src="../../assets/imgs/gluten.png" *ngIf="APPETIZER.glutin == 1" />
+                        <img width="15" height="15" src="../../assets/imgs/peanut.png" *ngIf="APPETIZER.nut == 1" /> 
+                        {{APPETIZER.$key}}
+                    </h1>
+                </ion-col>
+                <ion-col col-2>
+                    <h1 style="font-size: 2.5rem;  font-family: 'century'; "> 
+                        {{APPETIZER.price}}</h1>
+                </ion-col>
+                <ion-col col-12>
+                    <i class="item-text-wrap" style="font-size: 1.8rem; font-family: 'century';">{{APPETIZER.desc}}</i>
+                </ion-col>
+                <ion-col col-12>
+                </ion-col>
+            </ion-row>
+            <br>
+            <ion-row>
+                <ion-col col-12>
+                    <h1 text-right style="font-size: 3rem; ">GREEN LAND</h1>
+                    <br>
+                </ion-col>
+            </ion-row>
+            <ion-row *ngFor="let GREEN of GREENS">
+                <ion-col col-10>
+                    <h1 style="font-size: 2.5rem;  font-family: 'century';">
+                        <img width="15" height="15" src="../../assets/imgs/leaf.png" *ngIf="GREEN.vet == 1" />
+                        <img width="15" height="15" src="../../assets/imgs/gluten.png" *ngIf="GREEN.glutin == 1" />
+                        <img width="15" height="15" src="../../assets/imgs/peanut.png" *ngIf="GREEN.nut == 1" />
+                        {{GREEN.$key}}</h1>
+                </ion-col>
+                <ion-col col-2>
+                    <h1 style="font-size: 2.5rem;  font-family: 'century';"> {{GREEN.price}}</h1>
+                </ion-col>
+                <ion-col col-12>
+                    <i style="font-size: 1.8rem; font-family: 'century';">{{GREEN.desc}}</i>
+                </ion-col>
+                <ion-col col-12>
+                </ion-col>
+            </ion-row>
+            <br>
+            <ion-row>
+                <ion-col col-12>
+                    <h1 text-right style="font-size: 3rem; ">THE SOUPER BOWL</h1>
+                    <br>
+                </ion-col>
+            </ion-row>
+            <ion-row *ngFor="let SOUPER of SOUPERS">
+                <ion-col col-10>
+                    <h1 style="font-size: 2.5rem;  font-family: 'century';">
+                            <img width="15" height="15" src="../../assets/imgs/leaf.png" *ngIf="SOUPER.vet == 1" />
+                            <img width="15" height="15" src="../../assets/imgs/gluten.png" *ngIf="SOUPER.glutin == 1" />
+                            <img width="15" height="15" src="../../assets/imgs/peanut.png" *ngIf="SOUPER.nut == 1" /> 
+                        {{SOUPER.$key}}</h1>
+                </ion-col>
+                <ion-col col-2>
+                    <h1 style="font-size: 2.5rem;  font-family: 'century';"> {{SOUPER.price}}</h1>
+                </ion-col>
+                <ion-col col-12>
+                    <i style="font-size: 1.8rem; font-family: 'century';">{{SOUPER.desc}}</i>
+                </ion-col>
+                <ion-col col-12>
+                </ion-col>
+            </ion-row>
+            <br>
+            <ion-row>
+                <ion-col col-12>
+                    <h1 text-right style="font-size: 3rem; ">FISHERMAN BAR</h1>
+                    <br>
+                </ion-col>
+            </ion-row>
+            <ion-row *ngFor="let FISHERMAN of FISHERMANS">
+                <ion-col col-10>
+                    <h1 style="font-size: 2.5rem;  font-family: 'century';">
+                            <img width="15" height="15" src="../../assets/imgs/leaf.png" *ngIf="FISHERMAN.vet == 1" />
+                            <img width="15" height="15" src="../../assets/imgs/gluten.png" *ngIf="FISHERMAN.glutin == 1" />
+                            <img width="15" height="15" src="../../assets/imgs/peanut.png" *ngIf="FISHERMAN.nut == 1" /> 
+                        {{FISHERMAN.$key}}</h1>
+                </ion-col>
+                <ion-col col-2>
+                    <h1 style="font-size: 2.5rem;  font-family: 'century';"> {{FISHERMAN.price}}</h1>
+                </ion-col>
+                <ion-col col-12>
+                    <i style="font-size: 1.8rem; font-family: 'century';">{{FISHERMAN.desc}}</i>
+                </ion-col>
+                <ion-col col-12>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col col-12>
+                    <h1 text-left style="font-size: 3rem; ">DRESSING</h1>
+                </ion-col>
+            </ion-row>
+            <ion-row *ngFor="let DRESSING of DRESSINGS">
+                <li style="font-size: 1.8rem; font-family: 'century'">
+                    <i style="font-size: 1.8rem; font-family: 'century';">{{DRESSING.$key}}</i>
+                </li>
+            </ion-row>
+            <br>
+            <ion-row>
+                <ion-col col-12>
+                    <h1 text-right style="font-size: 3rem; ">KITCHEN’S ENTRÉE</h1>
+                    <br>
+                </ion-col>
+            </ion-row>
+            <ion-row *ngFor="let KITCHEN of KITCHENS">
+                <ion-col col-10>
+                    <h1 style="font-size: 2.5rem;  font-family: 'century';">
+                            <img width="15" height="15" src="../../assets/imgs/leaf.png" *ngIf="KITCHEN.vet == 1" />
+                            <img width="15" height="15" src="../../assets/imgs/gluten.png" *ngIf="KITCHEN.glutin == 1" />
+                            <img width="15" height="15" src="../../assets/imgs/peanut.png" *ngIf="KITCHEN.nut == 1" /> 
+                        {{KITCHEN.$key}}</h1>
+                </ion-col>
+                <ion-col col-2>
+                    <h1 style="font-size: 2.5rem;  font-family: 'century';"> {{KITCHEN.price}}</h1>
+                </ion-col>
+                <ion-col col-12>
+                    <i style="font-size: 1.8rem; font-family: 'century';">{{KITCHEN.desc}}</i>
+                </ion-col>
+                <ion-col col-12>
+                </ion-col>
+            </ion-row>
+            <br>
+            <ion-row>
+                <ion-col col-12>
+                    <h1 text-right style="font-size: 3rem; ">P O R K</h1>
+                    <br>
+                </ion-col>
+            </ion-row>
+            <ion-row *ngFor="let PORK of PORKS">
+                <ion-col col-10>
+                    <h1 style="font-size: 2.5rem;  font-family: 'century';">
+                            <img width="15" height="15" src="../../assets/imgs/leaf.png" *ngIf="PORK.vet == 1" />
+                            <img width="15" height="15" src="../../assets/imgs/gluten.png" *ngIf="PORK.glutin == 1" />
+                            <img width="15" height="15" src="../../assets/imgs/peanut.png" *ngIf="PORK.nut == 1" /> 
+                        {{PORK.$key}}</h1>
+                </ion-col>
+                <ion-col col-2>
+                    <h1 style="font-size: 2.5rem;  font-family: 'century';"> {{PORK.price}}</h1>
+                </ion-col>
+                <ion-col col-12>
+                    <i style="font-size: 1.8rem; font-family: 'century';">{{PORK.desc}}</i>
+                </ion-col>
+                <ion-col col-12>
+                </ion-col>
+            </ion-row>
+            <br>
+            <ion-row>
+                <ion-col col-12>
+                    <h1 text-right style="font-size: 3rem; ">BUTCHER’S CUT</h1>
+                    <br>
+                </ion-col>
+            </ion-row>
+            <ion-row *ngFor="let BUTCHER of BUTCHERS">
+                <ion-col col-10>
+                    <h1 style="font-size: 2.5rem;  font-family: 'century';">
+                            <img width="15" height="15" src="../../assets/imgs/leaf.png" *ngIf="BUTCHER.vet == 1" />
+                            <img width="15" height="15" src="../../assets/imgs/gluten.png" *ngIf="BUTCHER.glutin == 1" />
+                            <img width="15" height="15" src="../../assets/imgs/peanut.png" *ngIf="BUTCHER.nut == 1" /> 
+                        {{BUTCHER.$key}}</h1>
+                </ion-col>
+                <ion-col col-2>
+                    <h1 style="font-size: 2.5rem; font-family: 'century';"> {{BUTCHER.price}}</h1>
+                </ion-col>
+                <ion-col col-12>
+                    <i style="font-size: 1.8rem; font-family: 'century';">{{BUTCHER.desc1}}</i>
+                </ion-col>
+                <ion-col col-12>
+                    <i style="font-size: 1.8rem; font-family: 'century';">{{BUTCHER.desc2}}</i>
+                </ion-col>
+                <ion-col col-12>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col col-12>
+                    <h1 text-left style="font-size: 2.5rem;  font-family: 'century'; ">
+                        CHOICE OF SAUCE (MAX 2)</h1>
+                </ion-col>
+            </ion-row>
+            <ion-row *ngFor="let BUTCHERS_SAUCE of BUTCHERS_SAUCES">
+                <ion-col col-12>
+                    <i style="font-size: 1.8rem; font-family: 'century';">{{BUTCHERS_SAUCE.$key}}</i>
+                </ion-col>
+            </ion-row>
+            <br>
+            <ion-row>
+                <ion-col col-12>
+                    <h1 text-left style="font-size: 2.5rem;  font-family: 'century';">SIDE DISHES</h1>
+                    <br>
+                </ion-col>
+            </ion-row>
+            <ion-row *ngFor="let SIDE of SIDES">
+                <ion-col col-10>
+                    <i style="font-size: 1.8rem; font-family: 'century';">
+                            <img width="15" height="15" src="../../assets/imgs/leaf.png" *ngIf="SIDE.vet == 1" />
+                            <img width="15" height="15" src="../../assets/imgs/gluten.png" *ngIf="SIDE.glutin == 1" />
+                            <img width="15" height="15" src="../../assets/imgs/peanut.png" *ngIf="SIDE.nut == 1" /> 
+                        {{SIDE.$key}}</i>
+                </ion-col>
+                <ion-col col-2>
+                    <i style="font-size: 1.8rem; font-family: 'century';">{{SIDE.price}}</i>
+                </ion-col>
+                <ion-col col-12>
+                </ion-col>
+            </ion-row>
+            <br>
+            <ion-row>
+                <ion-col col-12>
+                    <h1 text-right style="font-size: 3rem; ">FOR TWO</h1>
+                    <br>
+                </ion-col>
+            </ion-row>
+            <ion-row *ngFor="let TWO of TWOS">
+                <ion-col col-10>
+                    <h1 style="font-size: 2.5rem;  font-family: 'century';">
+                            <img width="15" height="15" src="../../assets/imgs/leaf.png" *ngIf="TWO.vet == 1" />
+                            <img width="15" height="15" src="../../assets/imgs/gluten.png" *ngIf="TWO.glutin == 1" />
+                            <img width="15" height="15" src="../../assets/imgs/peanut.png" *ngIf="TWO.nut == 1" /> 
+                        {{TWO.$key}}</h1>
+                </ion-col>
+                <ion-col col-2>
+                    <h1 style="font-size: 2.5rem;  font-family: 'century';"> {{TWO.price}}</h1>
+                </ion-col>
+                <ion-col col-12>
+                    <i style="font-size: 1.8rem; font-family: 'century';">{{TWO.desc}}</i>
+                </ion-col>
+                <ion-col col-12>
+                </ion-col>
+            </ion-row>
+            <br>
+            <ion-row>
+                <ion-col col-12>
+                    <h1 text-right style="font-size: 3rem; ">VEGETARIAN</h1>
+                    <br>
+                </ion-col>
+            </ion-row>
+            <ion-row *ngFor="let VEGETARIAN of VEGETARIANS">
+                <ion-col col-10>
+                    <h1 style="font-size: 2.5rem;  font-family: 'century';">
+                            <img width="15" height="15" src="../../assets/imgs/leaf.png" *ngIf="VEGETARIAN.vet == 1" />
+                            <img width="15" height="15" src="../../assets/imgs/gluten.png" *ngIf="VEGETARIAN.glutin == 1" />
+                            <img width="15" height="15" src="../../assets/imgs/peanut.png" *ngIf="VEGETARIAN.nut == 1" /> 
+                        {{VEGETARIAN.$key}}</h1>
+                </ion-col>
+                <ion-col col-2>
+                    <h1 style="font-size: 2.5rem;  font-family: 'century';"> {{VEGETARIAN.price}}</h1>
+                </ion-col>
+                <ion-col col-12>
+                    <i style="font-size: 1.8rem; font-family: 'century';">{{VEGETARIAN.desc}}</i>
+                </ion-col>
+            </ion-row>
+            <br>
+            <ion-row>
+                <ion-col col-12>
+                    <h1 text-right style="font-size: 3rem; ">THE END</h1>
+                    <br>
+                </ion-col>
+            </ion-row>
+            <ion-row *ngFor="let END of ENDS">
+                <ion-col col-10>
+                    <h1 style="font-size: 2.5rem;  font-family: 'century';">
+                            <img width="15" height="15" src="../../assets/imgs/leaf.png" *ngIf="END.vet == 1" />
+                            <img width="15" height="15" src="../../assets/imgs/gluten.png" *ngIf="END.glutin == 1" />
+                            <img width="15" height="15" src="../../assets/imgs/peanut.png" *ngIf="END.nut == 1" /> 
+                        {{END.$key}}</h1>
+                </ion-col>
+                <ion-col col-2>
+                    <h1 style="font-size: 2.5rem;  font-family: 'century';"> {{END.price}}</h1>
+                </ion-col>
+                <ion-col col-12 *ngIf="END.desc">
+                    <i style="font-size: 1.8rem; font-family: 'century';">{{END.desc}}</i>
+                </ion-col>
+                <ion-col col-12 *ngIf="END.desc1">
+                    <i style="font-size: 1.8rem; font-family: 'century';">{{END.desc1}}</i>
+                </ion-col>
+                <ion-col col-12 *ngIf="END.desc2">
+                    <i style="font-size: 1.8rem; font-family: 'century';">{{END.desc2}}</i>
+                </ion-col>
+                <ion-col col-12 *ngIf="END.desc3">
+                    <i style="font-size: 1.8rem; font-family: 'century';">{{END.desc3}}</i>
+                </ion-col>
+                <ion-col col-12 *ngIf="END.desc4">
+                    <i style="font-size: 1.8rem; font-family: 'century';">{{END.desc4}}</i>
+                </ion-col>
+                <ion-col col-12>
+                </ion-col>
+            </ion-row>
+            <br>
+
+        </ion-grid>
+    </ion-card>
+</ion-content>
+<ion-footer>
+    <ion-toolbar class="footer-custom">
+        <ion-title>
+            <img width="15" height="15" src="../../assets/imgs/gluten.png" /> Dish contain Gluten
+            <img width="15" height="15" src="../../assets/imgs/peanut.png" /> Dish contains Nuts
+            <img width="15" height="15" src="../../assets/imgs/leaf.png" /> Vegetarian
+        </ion-title>
+        <ion-title>Prices are in Thai Baht subject to 10% service charge and applicable tax.</ion-title>
+    </ion-toolbar>
+</ion-footer>

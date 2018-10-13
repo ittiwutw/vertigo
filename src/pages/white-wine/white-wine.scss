@@ -1,0 +1,28 @@
+page-white-wine {
+    .whitewine-bg {
+
+        background: url("../../assets/imgs/wine3.png") no-repeat;
+        // background: url('../../img/getstart.png');
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+
+    .header-h1{
+        font-size: 8rem;
+    }
+
+    .card-md {
+        background-color : rgba(0, 0, 0, 0.63);
+        
+    }
+
+    .card-md h1 {
+        font-size: 3rem;
+        color: wheat;
+    }
+
+    .card-md p {
+        font-size: 2.5rem;
+        color: beige;
+    }
+}

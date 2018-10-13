@@ -1,0 +1,39 @@
+<!--
+  Generated template for the PromotionPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+</ion-header>
+
+
+<ion-content padding class="snack-bg">
+   
+        <br>
+        <h1 text-center style="font-size: 5rem;color: #ffdb72;">Snack Menu</h1>
+        <p text-center >Available from 06:00 PM until 12:30 AM</p>
+        <br>
+        <br>
+        <div padding *ngFor="let message of messages" style="margin-top: -20px;">
+            <h1 style="color: #ffdb72">{{message.$key}} {{message.price}}</h1>
+            <p >{{message.desc}}</p>
+        </div>
+        <br>
+        <h1 text-center style="font-size: 5rem; color: #ffdb72;">Dessert</h1>
+        <br>
+        <br>
+        <div padding *ngFor="let dessert of desserts" style="margin-top: -20px;">
+            <h1 style="color: #ffdb72">{{dessert.$key}} {{dessert.price}}</h1>
+            <p>{{dessert.desc}}</p>
+        </div>
+        
+    
+</ion-content>
+<ion-footer >
+        <ion-toolbar class="footer-custom">
+            <ion-title >Prices are in Thai Baht subject to 10% service charge and applicable tax.</ion-title>
+        </ion-toolbar>
+</ion-footer>
+

@@ -1,0 +1,26 @@
+page-vegetarian {
+    .vegetarian-bg {
+
+        background: url("../../assets/imgs/frame/frame.png") no-repeat;
+        // background: url('../../img/getstart.png');
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+
+    .header-h1{
+        font-size: 8rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        font-family: 'century';
+        color: white;
+    }
+
+    p {
+        font-size: 2rem;
+        margin-left: 10px;
+        margin-right: 10px;
+        color: white;
+    }
+}

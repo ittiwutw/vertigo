@@ -1,0 +1,26 @@
+page-a-la-cart {
+    .aLaCart-bg {
+
+        background: url("../../assets/imgs/a-la-cart2.jpg") no-repeat;
+        // background: url('../../img/getstart.png');
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+
+    .header-h1{
+        font-size: 8rem;
+    }
+
+    .card-md {
+        background-color : rgba(247, 247, 247, 0.87);
+        
+    }
+
+    .card-md h1 {
+        font-size: 3rem;
+    }
+
+    .card-md p {
+        font-size: 2.5rem;
+    }
+}

@@ -14,3 +14,187 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+@font-face {
+    font-family: 'optimum';
+    font-weight: 300;
+    font-size: 100px;
+    font-style: normal;
+    src: url('../assets/fonts/Optimum.ttf');
+}
+
+@font-face {
+    font-family: 'century';
+    font-weight: 300;
+    font-size: 100px;
+    font-style: normal;
+    src: url('../assets/fonts/CenturyGothic.ttf');
+}
+
+@font-face {
+    font-family: 'britannic';
+    font-weight: 300;
+    font-size: 100px;
+    font-style: normal;
+    src: url('../assets/fonts/Britannic_Bold_Regular.ttf');
+}
+
+@font-face {
+    font-family: 'agency';
+    font-weight: 300;
+    font-size: 100px;
+    font-style: normal;
+    src: url('../assets/fonts/agency-fb.ttf');
+}
+
+@font-face {
+    font-family: 'century-school';
+    font-weight: 300;
+    font-size: 100px;
+    font-style: normal;
+    src: url('../assets/CENSCBK.ttf');
+}
+
+.modal-wrapper {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.home-img {
+
+    background: url("../assets/imgs/homepage2.jpg") no-repeat;
+    // background: url('../../img/getstart.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+ion-icon {
+    &[class*="custom-"] {
+        margin: 0 5px 0 0;
+        vertical-align: middle;
+        $sz: 50px;
+        width: $sz;
+        height: 80px;
+    } // custom icons
+    &[class*="pin"] {
+        background: url('../assets/imgs/logo5.png') no-repeat 50% 50%;
+        background-size: contain;
+        height: 100px;
+    }
+    &[class*="stars"] {
+        background: url(../assets/imgs/custom-icons/stars.png) no-repeat 50% 50%;
+        background-size: contain;
+    }
+    
+}
+
+.card-background-page {
+
+    ion-card {
+      position: relative;
+      text-align: center;
+      background-color: #f4f4f4;
+    }
+  
+    .card-title {
+      position: absolute;
+      top: 1%;
+      font-size: 7.0em;
+      width: 100%;
+      font-weight: bold;
+      color: #777123;
+    }
+  
+    .card-subtitle {
+      font-size: 1.0em;
+      position: absolute;
+      top: 52%;
+      width: 100%;
+      color: #fff;
+    }
+
+    .card-header-md {
+        font-size: 1.3rem;
+        color: #6f6f71;
+        padding: 16px;
+    }
+  
+  }
+
+  .custom-row-menu{
+    ion-col {
+        margin-top: -20px;
+    }
+    }
+
+.tabbar {
+    height: 60px;
+}
+.tabs-md .tabbar {
+    background: #fffcfcba;
+}
+
+.tabs-md .tab-button-text{
+    font-size: 2rem;
+    font-family: britannic;
+}
+
+.tabs-md .tab-button[aria-selected=true] {
+    color: #a27a04;
+}
+
+.tabs-md .tab-button-icon {
+    margin-top: 40px;
+}
+
+.footer-custom{
+    text-align: center;
+    
+}
+
+.toolbar-title{
+    font-size: 1.5rem;
+    font-family: century-school;
+}
+
+ion-footer {
+    &.footer-md::before {
+        background-image: none;
+        height: 30px;
+    }
+}
+
+.frame-bg {
+
+    background: url("../../assets/imgs/frame1.png") no-repeat;
+    // background: url('../../img/getstart.png');
+    background-repeat: round;
+    //background-size:cover;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.8rem;
+    margin-left: 20px; 
+    margin-right: 20px;
+}
+
+ion-card img {
+    display: -webkit-inline-box;
+    width: auto;
+}
+
+ion-card-header{
+    font-family: britannic;
+}
+
+
+
+
+
+  

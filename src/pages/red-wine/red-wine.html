@@ -1,0 +1,255 @@
+<!--
+  Generated template for the PromotionPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    </ion-header>
+    
+    <ion-content padding class="redwine-bg">
+    <br>
+    <img width="500px" height="150px" src="../../assets/imgs/text/redwine.png" />
+        <ion-card class="">
+            <ion-grid>
+              <ion-row>
+                    <ion-col col-8 >
+                    </ion-col>
+                    <ion-col col-2 style="margin-left: -20px;">
+                    <h1 style="font-size: 3rem; ">Bottle</h1>
+                    </ion-col>
+                    <ion-col col-2 >
+                    <h1 style="font-size: 3rem; ">Glass</h1>
+                    </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col col-12 >
+                <h1 style="font-size: 3rem; ">Argentina</h1>
+                </ion-col>
+              </ion-row>
+              <ion-row *ngFor="let argentina of argentinas">
+                    <ion-col col-8 >
+                    <p style="font-size: 1.8rem; ">{{argentina.$key}}</p>
+                    </ion-col>
+                    <ion-col col-2 >
+                    <p style="font-size: 1.8rem; ">{{argentina.bot_price}}</p>
+                    </ion-col>
+                    <ion-col col-2 >
+                    <p style="font-size: 1.8rem; ">{{argentina.glass_price}}</p>
+                    </ion-col>
+              </ion-row>
+                <br>
+                  <ion-row>
+                      <ion-col col-12 >
+                      <h1 style="font-size: 3rem; ">Australia</h1>
+                      </ion-col>
+                  </ion-row>
+                  <ion-row *ngFor="let australia of australias">
+                      <ion-col col-8 >
+                      <p style="font-size: 1.8rem; ">{{australia.$key}}</p>
+                      </ion-col>
+                      <ion-col col-2 >
+                      <p style="font-size: 1.8rem; ">{{australia.bot_price}}</p>
+                      </ion-col>
+                      <ion-col col-2 >
+                      <p style="font-size: 1.8rem; ">{{australia.glass_price}}</p>
+                      </ion-col>
+                  </ion-row>
+                  <br>
+                  <ion-row>
+                      <ion-col col-12 >
+                      <h1 style="font-size: 3rem; ">Chile</h1>
+                      </ion-col>
+                  </ion-row>
+                  <ion-row *ngFor="let chile of chiles">
+                      <ion-col col-8 >
+                      <p style="font-size: 1.8rem; ">{{chile.$key}}</p>
+                      </ion-col>
+                      <ion-col col-2 >
+                      <p style="font-size: 1.8rem; ">{{chile.bot_price}}</p>
+                      </ion-col>
+                      <ion-col col-2 >
+                      <p style="font-size: 1.8rem; ">{{chile.glass_price}}</p>
+                      </ion-col>
+                  </ion-row>
+                  <br>
+                  <ion-row>
+                      <ion-col col-12 >
+                      <h1 style="font-size: 3rem; ">France</h1>
+                      </ion-col>
+                  </ion-row>
+                  <ion-row *ngFor="let france of frances">
+                      <ion-col col-8 >
+                      <p style="font-size: 1.8rem; ">{{france.$key}}</p>
+                      </ion-col>
+                      <ion-col col-2 >
+                      <p style="font-size: 1.8rem; ">{{france.bot_price}}</p>
+                      </ion-col>
+                      <ion-col col-2 >
+                      <p style="font-size: 1.8rem; ">{{france.glass_price}}</p>
+                      </ion-col>
+                  </ion-row>
+                  <br>
+                  <ion-row>
+                      <ion-col col-12 >
+                      <h1 style="font-size: 3rem; ">Italy</h1>
+                      </ion-col>
+                  </ion-row>
+                  <ion-row *ngFor="let italy of italys">
+                      <ion-col col-8 >
+                      <p style="font-size: 1.8rem; ">{{italy.$key}}</p>
+                      </ion-col>
+                      <ion-col col-2 >
+                      <p style="font-size: 1.8rem; ">{{italy.bot_price}}</p>
+                      </ion-col>
+                      <ion-col col-2 >
+                      <p style="font-size: 1.8rem; ">{{italy.glass_price}}</p>
+                      </ion-col>
+                  </ion-row>
+                  <br>
+                  <ion-row>
+                      <ion-col col-12 >
+                      <h1 style="font-size: 3rem; ">Lebanon</h1>
+                      </ion-col>
+                  </ion-row>
+                  <ion-row *ngFor="let lebanon of lebanons">
+                      <ion-col col-8 >
+                      <p style="font-size: 1.8rem; ">{{lebanon.$key}}</p>
+                      </ion-col>
+                      <ion-col col-2 >
+                      <p style="font-size: 1.8rem; ">{{lebanon.bot_price}}</p>
+                      </ion-col>
+                      <ion-col col-2 >
+                      <p style="font-size: 1.8rem; ">{{lebanon.glass_price}}</p>
+                      </ion-col>
+                  </ion-row>
+                  <br>
+                  <ion-row>
+                      <ion-col col-12 >
+                      <h1 style="font-size: 3rem; ">New Zealand</h1>
+                      </ion-col>
+                  </ion-row>
+                  <ion-row *ngFor="let newZealand of newZealands">
+                      <ion-col col-8 >
+                      <p style="font-size: 1.8rem; ">{{newZealand.$key}}</p>
+                      </ion-col>
+                      <ion-col col-2 >
+                      <p style="font-size: 1.8rem; ">{{newZealand.bot_price}}</p>
+                      </ion-col>
+                      <ion-col col-2 >
+                      <p style="font-size: 1.8rem; ">{{newZealand.glass_price}}</p>
+                      </ion-col>
+                  </ion-row>
+                  <br>
+                  <ion-row>
+                      <ion-col col-12 >
+                      <h1 style="font-size: 3rem; ">Spain</h1>
+                      </ion-col>
+                  </ion-row>
+                  <ion-row *ngFor="let spain of spains">
+                      <ion-col col-8 >
+                      <p style="font-size: 1.8rem; ">{{spain.$key}}</p>
+                      </ion-col>
+                      <ion-col col-2 >
+                      <p style="font-size: 1.8rem; ">{{spain.bot_price}}</p>
+                      </ion-col>
+                      <ion-col col-2 >
+                      <p style="font-size: 1.8rem; ">{{spain.glass_price}}</p>
+                      </ion-col>
+                  </ion-row>
+                  <br>
+                  <ion-row>
+                      <ion-col col-12 >
+                      <h1 style="font-size: 3rem; ">South Africa</h1>
+                      </ion-col>
+                  </ion-row>
+                  <ion-row *ngFor="let africa of africas">
+                      <ion-col col-8 >
+                      <p style="font-size: 1.8rem; ">{{africa.$key}}</p>
+                      </ion-col>
+                      <ion-col col-2 >
+                      <p style="font-size: 1.8rem; ">{{africa.bot_price}}</p>
+                      </ion-col>
+                      <ion-col col-2 >
+                      <p style="font-size: 1.8rem; ">{{africa.glass_price}}</p>
+                      </ion-col>
+                  </ion-row>
+                  <br>
+                  <ion-row>
+                      <ion-col col-12 >
+                      <h1 style="font-size: 3rem; ">USA</h1>
+                      </ion-col>
+                  </ion-row>
+                  <ion-row *ngFor="let USA of USAs">
+                      <ion-col col-8 >
+                      <p style="font-size: 1.8rem; ">{{USA.$key}}</p>
+                      </ion-col>
+                      <ion-col col-2 >
+                      <p style="font-size: 1.8rem; ">{{USA.bot_price}}</p>
+                      </ion-col>
+                      <ion-col col-2 >
+                      <p style="font-size: 1.8rem; ">{{USA.glass_price}}</p>
+                      </ion-col>
+                  </ion-row>
+                  <br>
+                  <ion-row>
+                      <ion-col col-12 >
+                      <h1 style="font-size: 3rem; ">Rosé Wine</h1>
+                      </ion-col>
+                  </ion-row>
+                  <ion-row *ngFor="let rose of roses">
+                      <ion-col col-8 >
+                      <p style="font-size: 1.8rem; ">{{rose.$key}}</p>
+                      </ion-col>
+                      <ion-col col-2 >
+                      <p style="font-size: 1.8rem; ">{{rose.bot_price}}</p>
+                      </ion-col>
+                      <ion-col col-2 >
+                      <p style="font-size: 1.8rem; ">{{rose.glass_price}}</p>
+                      </ion-col>
+                  </ion-row>
+                  <br>
+                  <ion-row>
+                      <ion-col col-12 >
+                      <h1 style="font-size: 3rem; ">Dessert Wine</h1>
+                      </ion-col>
+                  </ion-row>
+                  <ion-row *ngFor="let dessertWine of dessertWines">
+                      <ion-col col-8 >
+                      <p style="font-size: 1.8rem; ">{{dessertWine.$key}}</p>
+                      </ion-col>
+                      <ion-col col-2 >
+                      <p style="font-size: 1.8rem; ">{{dessertWine.bot_price}}</p>
+                      </ion-col>
+                      <ion-col col-2 >
+                      <p style="font-size: 1.8rem; ">{{dessertWine.glass_price}}</p>
+                      </ion-col>
+                  </ion-row>
+                  <br>
+                  <ion-row>
+                      <ion-col col-12 >
+                      <h1 style="font-size: 3rem; ">Selected House Wine</h1>
+                      </ion-col>
+                  </ion-row>
+                  <ion-row *ngFor="let selected of selecteds">
+                      <ion-col col-8 >
+                      <p style="font-size: 1.8rem; ">{{selected.$key}}</p>
+                      </ion-col>
+                      <ion-col col-2 >
+                      <p style="font-size: 1.8rem; ">{{selected.bot_price}}</p>
+                      </ion-col>
+                      <ion-col col-2 >
+                      <p style="font-size: 1.8rem; ">{{selected.glass_price}}</p>
+                      </ion-col>
+                  </ion-row>
+            </ion-grid>
+        </ion-card>
+    </ion-content>
+    <ion-footer >
+            <ion-toolbar class="footer-custom">
+                <ion-title>Prices are in Thai Baht subject to 10% service charge and applicable tax.</ion-title>
+            </ion-toolbar>
+    </ion-footer>
+    
+    

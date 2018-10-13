@@ -1,0 +1,31 @@
+page-cocktail {
+    .cocktail-bg {
+
+        background: url("../../assets/imgs/bg4.png") no-repeat;
+        // background: url('../../img/getstart.png');
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+
+    .header-h1{
+        font-size: 8rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-left: 30px; 
+        margin-right: 30px;
+        color: #ffdb72;
+    }
+
+    p {
+        margin-left: 30px; 
+        margin-right: 20px;
+        color: white;
+    }
+
+    .content-md{
+        background-color: #cecbff;
+    }
+
+}

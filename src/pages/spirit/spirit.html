@@ -1,0 +1,252 @@
+<!--
+  Generated template for the PromotionPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  </ion-header>
+  
+  <ion-content padding class="spirit-bg">
+  <br>
+    <ion-grid>
+    
+        <ion-row>
+            <ion-col col-12 >
+            <h1 style="font-size: 2.5rem; ">APERITIF / DIGESTIF</h1>
+            </ion-col>
+        </ion-row>
+        <ion-row style="margin-top: -20px;" *ngFor="let aperitif of spirit_aperitif">
+            <ion-col col-1 >
+            </ion-col>
+            <ion-col col-9 >
+            <p>{{aperitif.$key}}</p>
+            </ion-col>
+            <ion-col col-2 >
+            <p>{{aperitif.price}}</p>
+            </ion-col>      
+        </ion-row>
+        <br>
+        <ion-row>
+            <ion-col col-12 >
+            <h1 style="font-size: 2.5rem; ">LIQUOR</h1>
+            </ion-col>
+        </ion-row>
+        <ion-row style="margin-top: -20px;" *ngFor="let LIQUOR of spirit_LIQUOR">
+            <ion-col col-1 >
+            </ion-col>
+            <ion-col col-9 >
+            <p>{{LIQUOR.$key}}</p>
+            </ion-col>
+            <ion-col col-2 >
+            <p>{{LIQUOR.price}}</p>
+            </ion-col>      
+        </ion-row>
+        <br>
+        <ion-row>
+            <ion-col col-12 >
+            <h1 style="font-size: 2.5rem; ">GIN</h1>
+            </ion-col>
+        </ion-row>
+        <ion-row style="margin-top: -20px;" *ngFor="let GIN of spirit_GIN">
+            <ion-col col-1 >
+            </ion-col>
+            <ion-col col-9 >
+            <p>{{GIN.$key}}</p>
+            </ion-col>
+            <ion-col col-2 >
+            <p>{{GIN.price}}</p>
+            </ion-col>      
+        </ion-row>
+       
+        <br>
+        <ion-row>
+            <ion-col col-12 >
+            <h1 style="font-size: 2.5rem; ">VODKA</h1>
+            </ion-col>
+        </ion-row>
+        <ion-row style="margin-top: -20px;" *ngFor="let vodka of spirit_vodka">
+            <ion-col col-1 >
+            </ion-col>
+            <ion-col col-9 >
+            <p>{{vodka.$key}}</p>
+            </ion-col>
+            <ion-col col-2 >
+            <p>{{vodka.price}}</p>
+            </ion-col>      
+        </ion-row>
+        <br>
+        <ion-row>
+            <ion-col col-12 >
+            <h1 style="font-size: 2.5rem; ">RUM</h1>
+            </ion-col>
+        </ion-row>
+        <ion-row style="margin-top: -20px;" *ngFor="let RUM of spirit_RUM">
+            <ion-col col-1 >
+            </ion-col>
+            <ion-col col-9 >
+            <p>{{RUM.$key}}</p>
+            </ion-col>
+            <ion-col col-2 >
+            <p>{{RUM.price}}</p>
+            </ion-col>      
+        </ion-row>
+        <br>
+        <ion-row>
+            <ion-col col-12 >
+            <h1 style="font-size: 2.5rem; ">TEQUILA</h1>
+            </ion-col>
+        </ion-row>
+        <ion-row style="margin-top: -20px;" *ngFor="let TEQUILA of spirit_TEQUILA">
+            <ion-col col-1 >
+            </ion-col>
+            <ion-col col-9 >
+            <p>{{TEQUILA.$key}}</p>
+            </ion-col>
+            <ion-col col-2 >
+            <p>{{TEQUILA.price}}</p>
+            </ion-col>      
+        </ion-row>
+       
+        <br>
+        <ion-row>
+            <ion-col col-12 >
+            <h1 style="font-size: 2.5rem; ">COGNAC / ARMAGNAC</h1>
+            </ion-col>
+        </ion-row>
+        <ion-row style="margin-top: -20px;" *ngFor="let COGNAC of spirit_COGNAC">
+            <ion-col col-1 >
+            </ion-col>
+            <ion-col col-9 >
+            <p>{{COGNAC.$key}}</p>
+            </ion-col>
+            <ion-col col-2 >
+            <p>{{COGNAC.price}}</p>
+            </ion-col>      
+        </ion-row>
+        <br>
+        <ion-row>
+            <ion-col col-12 >
+            <h1 style="font-size: 2.5rem; ">SINGLE MALT</h1>
+            </ion-col>
+        </ion-row>
+        <ion-row style="margin-top: -20px;" *ngFor="let MALT of spirit_MALT">
+            <ion-col col-1 >
+            </ion-col>
+            <ion-col col-9 >
+            <p>{{MALT.$key}}</p>
+            </ion-col>
+            <ion-col col-2 >
+            <p>{{MALT.price}}</p>
+            </ion-col>      
+        </ion-row>
+        
+        <br>
+        <ion-row>
+            <ion-col col-12 >
+            <h1 style="font-size: 2.5rem; ">BLENDED</h1>
+            </ion-col>
+        </ion-row>
+        <ion-row style="margin-top: -20px;" *ngFor="let BLENDED of spirit_BLENDED">
+            <ion-col col-1 >
+            </ion-col>
+            <ion-col col-9 >
+            <p>{{BLENDED.$key}}</p>
+            </ion-col>
+            <ion-col col-2 >
+            <p>{{BLENDED.price}}</p>
+            </ion-col>      
+        </ion-row>
+        
+        <br>
+        <ion-row>
+            <ion-col col-12 >
+            <h1 style="font-size: 2.5rem; ">AMERICAN</h1>
+            </ion-col>
+        </ion-row>
+        <ion-row style="margin-top: -20px;" *ngFor="let AMERICAN of spirit_AMERICAN">
+            <ion-col col-1 >
+            </ion-col>
+            <ion-col col-9 >
+            <p>{{AMERICAN.$key}}</p>
+            </ion-col>
+            <ion-col col-2 >
+            <p>{{AMERICAN.price}}</p>
+            </ion-col>      
+        </ion-row>
+        <br>
+        <ion-row>
+            <ion-col col-12 >
+            <h1 style="font-size: 2.5rem; ">IRISH</h1>
+            </ion-col>
+        </ion-row>
+        <ion-row style="margin-top: -20px;" *ngFor="let IRISH of spirit_IRISH">
+            <ion-col col-1 >
+            </ion-col>
+            <ion-col col-9 >
+            <p>{{IRISH.$key}}</p>
+            </ion-col>
+            <ion-col col-2 >
+            <p>{{IRISH.price}}</p>
+            </ion-col>      
+        </ion-row>
+        <br>
+        <ion-row>
+            <ion-col col-12 >
+            <h1 style="font-size: 2.5rem; ">LOCAL BEER</h1>
+            </ion-col>
+        </ion-row>
+        <ion-row style="margin-top: -20px;" *ngFor="let LOCAL of spirit_LOCAL">
+            <ion-col col-1 >
+            </ion-col>
+            <ion-col col-9 >
+            <p>{{LOCAL.$key}}</p>
+            </ion-col>
+            <ion-col col-2 >
+            <p>{{LOCAL.price}}</p>
+            </ion-col>      
+        </ion-row>
+        <br>
+        <ion-row>
+            <ion-col col-12 >
+            <h1 style="font-size: 2.5rem; ">CRAFTED LOCAL BEER</h1>
+            </ion-col>
+        </ion-row>
+        <ion-row style="margin-top: -20px;" *ngFor="let CRAFTED of spirit_CRAFTED">
+            <ion-col col-1 >
+            </ion-col>
+            <ion-col col-9 >
+            <p>{{CRAFTED.$key}}</p>
+            </ion-col>
+            <ion-col col-2 >
+            <p>{{CRAFTED.price}}</p>
+            </ion-col>      
+        </ion-row>
+        <br>
+        <ion-row>
+            <ion-col col-12 >
+            <h1 style="font-size: 2.5rem; ">IMPORT BEER</h1>
+            </ion-col>
+        </ion-row>
+        <ion-row style="margin-top: -20px;" *ngFor="let IMPORT of spirit_import">
+            <ion-col col-1 >
+            </ion-col>
+            <ion-col col-9 >
+            <p>{{IMPORT.$key}}</p>
+            </ion-col>
+            <ion-col col-2 >
+            <p>{{IMPORT.price}}</p>
+            </ion-col>      
+        </ion-row>
+        
+        <br>
+    </ion-grid>
+  </ion-content>
+<ion-footer >
+    <ion-toolbar class="footer-custom">
+        <ion-title>Prices are in Thai Baht subject to 10% service charge and applicable tax.</ion-title>
+    </ion-toolbar>
+</ion-footer>
+  
+  

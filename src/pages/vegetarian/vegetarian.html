@@ -1,0 +1,35 @@
+<!--
+  Generated template for the PromotionPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  </ion-header>
+  
+  <ion-content padding class="vegetarian-bg" style="overflow-y: hidden;">
+  <br>
+      <img src="../../assets/imgs/frame/vetget_head.png" />
+      <div *ngFor="let vegetarian of vegetarians; last as isLast">
+        <h1 style="text-align: center;">
+          <img width="15" height="15" src="../../assets/imgs/leaf.png" *ngIf="vegetarian.vet == 1"/>
+          <img width="15" height="15" src="../../assets/imgs/gluten.png" *ngIf="vegetarian.glutin == 1"/>
+          <img width="15" height="15" src="../../assets/imgs/peanut.png" *ngIf="vegetarian.nut == 1"/>
+          {{vegetarian.$key}}
+        </h1>
+        <p style=" text-align: center;"><i >{{vegetarian.desc}}</i></p>
+        <p style=" text-align: center;">{{vegetarian.desc2}}</p>
+        <p style=" text-align: center; font-family: 'agency';">{{vegetarian.wine}}</p>
+        <img width="300px" height="50px" style="margin-left: 190px; margin-bottom: 20px;" 
+          src="../../assets/imgs/line.png" *ngIf="!isLast"/>
+      </div>
+        <br>
+        <br>
+        <h1 style="text-align: center;">3-course set 2,300</h1>
+        <h1 style="text-align: center;">4-course set 3,200</h1>
+        <img style="max-width: 70%; border: 0;margin-left: 15%;" src="../../assets/imgs/frame/bottom.png" />
+          
+  </ion-content>
+  
+  

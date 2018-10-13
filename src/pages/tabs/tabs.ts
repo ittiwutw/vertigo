@@ -1,19 +1,27 @@
 import { Component } from '@angular/core';
-
-import { AboutPage } from '../about/about';
-import { ContactPage } from '../contact/contact';
+import { NavParams,NavController } from 'ionic-angular';
 import { HomePage } from '../home/home';
+import { MoonBarPage } from '../moon-bar/moon-bar';
+import { BeveragePage } from '../beverage/beverage';
+import { WinePage } from '../wine/wine';
+import { VertigoPage } from '../vertigo/vertigo';
+import { PopoverController } from 'ionic-angular';
+import { PromotionPage } from '../promotion/promotion';
+
 
 @Component({
+  selector: 'page-tabs',
   templateUrl: 'tabs.html'
 })
 export class TabsPage {
 
-  tab1Root = HomePage;
-  tab2Root = AboutPage;
-  tab3Root = ContactPage;
+  tabMoonBar = MoonBarPage;
+  tabBeverage = BeveragePage
+  tabHome = HomePage;
+  tabWine = WinePage;
+  tabVertigo = VertigoPage;
 
-  constructor() {
-
+  constructor(public popoverCtrl: PopoverController,public navParams: NavParams,public navCtrl: NavController) {
   }
+
 }

@@ -1,0 +1,25 @@
+page-snack {
+    .snack-bg {
+
+        background: url("../../assets/imgs/bg4.png") no-repeat;
+        // background: url('../../img/getstart.png');
+        background-repeat: round;
+        //background-size:cover;
+    }
+
+    .header-h1{
+        font-size: 8rem;
+    }
+
+    h1 {
+        margin-left: 20px; 
+        margin-right: 20px;
+    }
+
+    p {
+        margin-left: 30px; 
+        margin-right: 20px;
+        color: white;
+    }
+
+}
